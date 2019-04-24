@@ -1,15 +1,17 @@
 import React from "react";
 
-const BASE_URL = "http://localhost:8081/api";
-
 export default class AddUser extends React.Component {
   state = {
     name: ""
   };
 
   addUser() {
-    fetch(`${BASE_URL}/user`, {
+    fetch("http://localhost:8081/api/user", {
       method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         name: this.state.name
       })
@@ -30,6 +32,7 @@ export default class AddUser extends React.Component {
           type="text"
           value={this.state.name}
           onChange={e => this.inputHandler(e.target.value)}
+          onKeyPress={e => e.key === "Enter" && this.addUser()}
         />
         <button onClick={() => this.addUser()}>Add</button>
       </div>

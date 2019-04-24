@@ -3,7 +3,7 @@ import Controller from "../components/Controller";
 
 export default function Page3(props) {
   return (
-    <div className="page">
+    <div className="page container">
       <Controller currentPath={props.match.path} />
       <h1>Page3 content</h1>
       <p>
