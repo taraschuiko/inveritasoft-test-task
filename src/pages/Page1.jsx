@@ -6,12 +6,12 @@ export default function Page1(props) {
   return (
     <div className="page container">
       <Controller currentPath={props.match.path} />
-      <h1>Page1 content</h1>
+      <h1>Page 1</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-        veritatis similique quod iste sunt explicabo in nesciunt quae officia
-        enim odit debitis voluptatibus sed nulla, culpa maiores doloremque
-        voluptate a.
+        React makes it painless to create interactive UIs. Design simple views
+        for each state in your application, and React will efficiently update
+        and render just the right components when your data changes. Declarative
+        views make your code more predictable and easier to debug.
       </p>
       <AddUser />
     </div>

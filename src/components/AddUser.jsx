@@ -26,7 +26,7 @@ export default class AddUser extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="AddUser">
         <h2>Add user</h2>
         <input
           type="text"

@@ -5,12 +5,12 @@ export default function Page3(props) {
   return (
     <div className="page container">
       <Controller currentPath={props.match.path} />
-      <h1>Page3 content</h1>
+      <h1>Page 3</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-        veritatis similique quod iste sunt explicabo in nesciunt quae officia
-        enim odit debitis voluptatibus sed nulla, culpa maiores doloremque
-        voluptate a.
+        JavaScript is a high-level, interpreted programming language that
+        conforms to the ECMAScript specification. JavaScript has curly-bracket
+        syntax, dynamic typing, prototype-based object-orientation, and
+        first-class functions.
       </p>
     </div>
   );
